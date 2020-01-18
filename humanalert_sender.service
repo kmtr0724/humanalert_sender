@@ -1,0 +1,10 @@
+[Unit]
+Description = Human Alert Sender
+
+[Service]
+ExecStart = /opt/humanalert_sender.py
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
